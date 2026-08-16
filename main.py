@@ -1,3 +1,5 @@
+from sistema import clientes
+lista = []
 def menu():
     while True:
         print("----------------------")
@@ -10,4 +12,10 @@ def menu():
         print("[4] Ver Lista de Cliente")
         print("[5] Sair")
 
-        escolha = int(input("Opcção: "))
+        escolha = int(input("Opção: "))
+
+        if escolha ==  1:
+            clientes.cadastrar_clientes(lista)
+
+        
+
