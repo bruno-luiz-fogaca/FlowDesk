@@ -1,4 +1,5 @@
 from sistema import clientes
+from sistema import fila
 lista = []
 def menu():
     while True:
@@ -17,5 +18,9 @@ def menu():
         if escolha == 1:
             clientes.cadastrar_clientes(lista)
 
-        if escolha == 2:
+        elif escolha == 2:
             clientes.excluir_clientes(lista)
+
+        elif escolha == 3:
+            fila.chamar_proximo_cliente(lista)
+            
