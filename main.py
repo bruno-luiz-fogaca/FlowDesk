@@ -14,8 +14,8 @@ def menu():
 
         escolha = int(input("Opção: "))
 
-        if escolha ==  1:
+        if escolha == 1:
             clientes.cadastrar_clientes(lista)
 
-        
-
+        if escolha == 2:
+            clientes.excluir_clientes(lista)
